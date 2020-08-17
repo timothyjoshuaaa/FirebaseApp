@@ -1,0 +1,10 @@
+<div class="card">
+    <h4 class="card-header">Home Page</h4>
+    <div class="card-body">
+<p>Welcome</p>
+<p  *ngIf = "user">User ID: {{user?.uid}}</p>
+<p  *ngIf = "user">Email: {{user?.email}}</p>
+<p  *ngIf = "user">Name: {{user?.displayName}}</p>
+<button class ="btn-btn-primary" *ngIf = "user" (click)="logout()">Logout</button>
+</div>
+</div>

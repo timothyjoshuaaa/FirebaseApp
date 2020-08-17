@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3 mt-5">
+    
+    <div class="card">
+        <h4 class="card-header">Login</h4>
+        <div class="card-body">
+            <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete = "off">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" formControlName="email" class="form-control"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" formControlName="password" class="form-control" />
+                    
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">
+                        Login
+                    </button>
+                    <a routerLink="register" class="btn btn-link">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+    
